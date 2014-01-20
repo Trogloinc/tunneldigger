@@ -55,6 +55,8 @@ DAEMON_ARGS=$(eval echo "$DAEMON_ARGS")
 #
 do_start()
 {
+        modprobe l2tp_eth
+
 	# Return
 	#   0 if daemon has been started
 	#   1 if daemon was already running
